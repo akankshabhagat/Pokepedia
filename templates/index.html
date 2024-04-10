@@ -1,0 +1,52 @@
+
+
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+          <link  rel= "stylesheet " href="{{ url_for('static', filename='styles/style.css')}}"> 
+          <title>Pokémon Image</title>
+      </head>
+      <body>
+          <h1 class="Head">PocketMon</h1>
+          <div class="main"> 
+              <div class="leftside">
+                 <h1> Search Pokemon</h1>
+                  <form name="passdata" action="." method="post">
+      <input type="text" class="inp"  name="name" placeholder="enter here" >
+      <input type="submit" class="btn" value="go">
+              </form>
+             
+             
+              <section class="sc_info">
+                  <h2>{{p_name}} </h2>
+                  <ul class="square-marker">
+                    <li >height:{{p_height}} </li>
+                    <li>Color:{{p_color}}</li>
+                    <li>Generation:{{p_gen}}</li>
+                    <li>Shape:{{p_shape}}</li>
+                  </ul>
+                </section>
+                <section class="sc_info">
+                  <h1>About </h1>
+                  <ul>
+                    <li> {{readable_descriptions}}</li>
+                  <li>is_legenddary:{{P_legend}}</li>
+                  <li>Growth-rate:{{p_rate}}</li>
+                  </ul>
+                  
+                </section>
+                
+              </div>
+              <div class="rightside">
+                  <h1>{{p_name}}</h1>
+                  <img src="{{p_data}}" alt="Search for me" class="img">
+              </div>
+          </div>
+         
+      </body>
+      </html> 
+      

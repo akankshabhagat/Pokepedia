@@ -1,0 +1,103 @@
+body{
+    font-style: bold;
+      background: linear-gradient(
+        to right,
+         white,#99bae6,#689be3
+      );
+    }
+    .Head{
+      text-align: center;
+      color: black;
+      
+    }
+    .main {
+        display: flex;
+        height: 100vh;
+        margin:50px;
+        
+    }
+    
+    .leftside,
+    .rightside {
+        flex: 1;
+        box-sizing: border-box; 
+        
+    }
+    .btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: red;
+        color: yellow;
+        border: 2px solid black; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+    .img {
+        height:80%;
+        width: 80%;
+        -webkit-animation: mover 2s infinite  alternate;
+        animation: mover 2s infinite  alternate;
+      
+    }
+    @-webkit-keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px); }
+    }
+    @keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px); }
+    }
+    .leftside {
+        background-color: #99bae6; 
+        border-radius: 0 80px;
+        margin:5px;
+        
+    }
+    .rightside {
+        background-color:black ;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 80px 0;
+        
+    }
+    
+    
+    .inp {
+        width: 30%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 40px  40px;
+    }
+    .square-marker {
+        list-style-type: square;  
+      }
+      
+      @counter-style thumbs {
+        system: cyclic;
+        symbols: "\1F44D";
+        suffix: " ";
+      }
+      
+      .thumbs-marker {
+        list-style: thumbs;
+      }
+      
+      @counter-style rocker {
+        system: cyclic;
+        symbols: "\\m/";
+        suffix: " ";
+      }
+      
+      .rocker-marker {
+        list-style-type: rocker;
+      }
+      
+      .sc_info{
+        border: 4px black dotted;
+        font-size: 18px;
+      } 
+

@@ -8,12 +8,13 @@ body{
     .Head{
       text-align: center;
       color: black;
+      margin-bottom: 0px;
       
     }
     .main {
         display: flex;
         height: 100vh;
-        margin:50px;
+        /* margin:50px; */
         
     }
     
